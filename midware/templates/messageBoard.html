@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Echo - Velcom</title>
+		<style type="text/css">
+			html {
+				font-style: sans-serif;
+			}
+			
+			body,
+			input {
+				margin: 0;
+				padding: 0;
+				font-family: 'Open Sans', sans-serif;
+				background: #4A374A;
+			}
+			
+			input {
+				display: inline-block;
+				background: #fff;
+			}
+			
+			h2 {
+				text-align: center;
+				color: midnightblue;
+			}
+			
+			hr {
+				width: 50%;
+				text-align: center;
+			}
+			
+			.xiao-container {
+				width: 100%;
+				overflow-y: auto;
+			}
+			
+			.xiao-register-box {
+				position: relative;
+				height: 800px;
+				width: 800px;
+				top: 50px;
+				margin: 0 auto;
+				z-index: 99999;
+				background: #eeeeee;
+				border: 7px solid #ccc;
+			}
+			
+			.xiao-title-box {
+				position: absolute;
+				width: 500px;
+				height: 50px;
+				margin-left: 160px;
+				margin-top: -85px;
+				text-align: center;
+				font-size: 18px;
+				font-weight: 800;
+				font-family: 'Open Sans', sans-serif;
+				text-shadow: 0 0 7px;
+				color: #ff5000;
+				line-height: 60px;
+			}
+			
+			.xiao-account-input {
+				display: inline-block;
+				margin-left: 61px;
+			}
+			
+			.xiao-account-box {
+				position: absolute;
+				width: 450px;
+				height: 40px;
+				line-height: 40px;
+				margin-top: 100px;
+				margin-left: 80px;
+				font-weight: 700;
+			}
+			
+			#account {
+				height: 35px;
+				width: 290px;
+				border: 2px #ccc;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="xiao-container">
+			<div class="xiao-register-box">
+
+				<div class="xiao-title-box">
+					<h1>YNU Message Board</h1>
+				</div>
+
+				<div>
+					<h2>History messages</h2>
+
+					<hr />
+
+					<p align="center">
+						{% for one_message in bean['messages']%}
+					</p>
+					<p align="center">
+						{{ one_message }}
+					</p>
+					<p align="center">
+						{% endfor %}
+					</p>
+					<br />
+				</div>
+
+				<div>
+					<form action="/echo.php" method="post">
+						<div class="xiao-account-box">
+							<label for="account">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言信息板:</label>
+							<div class="xiao-account-input">
+								<input type="text" name="msg" style="width:500px;height:150px;" maxlength="100" placeholder="                请输入留言信息，最多输入100个字符" onchange="checkTel(this.id)" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
