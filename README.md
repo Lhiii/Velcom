@@ -79,24 +79,24 @@ CREATE DATABASE ${db_name};
 ### <li>程序运行截图
  
 <center>
-  <img src="C:\Users\ASUS-1\Desktop\实验截图\01.png" width="400" height=""> 
+  <img src="screenShot_img\1.png" width="400" height=""> 
   </center>
 <center>
-  <img src="C:\Users\ASUS-1\Desktop\实验截图\02.png" width="400" height=""> 
-  </center>
-
-<center>
-  <img src="C:\Users\ASUS-1\Desktop\实验截图\03.png" width="400" height=""> 
+  <img src="screenShot_img\2.png" width="400" height=""> 
   </center>
 
 <center>
-  <img src="C:\Users\ASUS-1\Desktop\实验截图\04.png" width="400" height=""> 
+  <img src="screenShot_img\3.png" width="400" height=""> 
+  </center>
+
+<center>
+  <img src="screenShot_img\4.png" width="400" height=""> 
   </center>
  
 ### <li>数据库中留言信息截图
  
 <center>
-  <img src="C:\Users\ASUS-1\Desktop\实验截图\05.png" width="400" height=""> 
+  <img src="screenShot_img\5.png" width="400" height=""> 
   </center>
 
 ## 小组项目心得体会
